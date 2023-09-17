@@ -1,108 +1,6 @@
-html {
-  box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-}
-
-/* Responsive Images */
-
-embed,
-iframe,
-img,
-object,
-video {
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-p,
-pre,
-blockquote,
-figure,
-hr {
-  margin: 0;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-}
-
-/* Removes all decimals and discs from lists */
-
-ol,
-ul {
-  list-style: none;
-}
-
-/* 
- * Completely resets form items
- * ----------------------------
- * Super hard reset that removes all borders
- * and radiuses of all form items (including
- * checkboxes and radios)
- */
-
-input,
-textarea,
-button {
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  outline: none;
-  appearance: none;
-  text-align: left;
-}
-
-input:hover,
-input:active,
-input:focus,
-textarea:hover,
-textarea:active,
-textarea:focus,
-button:hover,
-button:active,
-button:focus {
-  outline: none;
-}
-
-:root {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
+/* Estilos base para todas las pantallas */
+/* Estos estilos se aplicarán a todas las pantallas */
 html {
   font-size: 175%;
   font-weight: 300;
@@ -115,6 +13,8 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -141,7 +41,7 @@ body {
   font-size: 1.714285714em;
   padding: 0.5em 0.75em;
   text-align: right;
-  border-bottom: 1px solid #000; /* Agrega una línea de separación debajo del resultado */
+  border-bottom: 1px solid #000;
 }
 
 .calculator__keys {
@@ -178,6 +78,41 @@ body {
 
 .key--equal {
   background-image: linear-gradient(to bottom, #00CC00, #009900);
-  grid-column: 1 / -1; /* Cambia grid-column para ocupar todas las columnas disponibles */
-  grid-row: 5; /* Cambia grid-row para colocarlo en la quinta fila */
+  grid-column: 1 / -1;
+  grid-row: 5;
+}
+
+/* Media Queries para pantallas de diferentes tamaños */
+/* Aquí se aplican los estilos específicos para tamaños de pantalla diferentes */
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 100%;
+    /* Ajusta otros estilos según sea necesario para pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .calculator {
+    max-width: 50%;
+    /* Ajusta otros estilos según sea necesario para tabletas */
+  }
+}
+
+/* Estilos para pantallas grandes (computadoras portátiles y escritorios) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .calculator {
+    max-width: 40%;
+    /* Ajusta otros estilos según sea necesario para pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas muy grandes (monitores grandes) */
+@media (min-width: 1441px) {
+  .calculator {
+    max-width: 30%;
+    /* Ajusta otros estilos según sea necesario para pantallas muy grandes */
+  }
 }
