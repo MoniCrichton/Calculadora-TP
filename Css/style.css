@@ -86,33 +86,33 @@ body {
 /* Aquí se aplican los estilos específicos para tamaños de pantalla diferentes */
 
 /* Estilos para pantallas pequeñas (teléfonos móviles) */
-@media (max-width: 480px) {
+/**@media (max-width: 480px) {
   .calculator {
     max-width: 100%;
-    /* Ajusta otros estilos según sea necesario para pantallas pequeñas */
+    /* Ajusta otros estilos según sea necesario para pantallas pequeñas 
   }
 }
 
-/* Estilos para pantallas medianas (tabletas) */
+/* Estilos para pantallas medianas (tabletas) 
 @media (min-width: 481px) and (max-width: 1024px) {
   .calculator {
     max-width: 50%;
-    /* Ajusta otros estilos según sea necesario para tabletas */
+    /* Ajusta otros estilos según sea necesario para tabletas 
   }
 }
 
-/* Estilos para pantallas grandes (computadoras portátiles y escritorios) */
+/* Estilos para pantallas grandes (computadoras portátiles y escritorios) 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .calculator {
     max-width: 40%;
-    /* Ajusta otros estilos según sea necesario para pantallas grandes */
+    /* Ajusta otros estilos según sea necesario para pantallas grandes 
   }
 }
 
-/* Estilos para pantallas muy grandes (monitores grandes) */
+/* Estilos para pantallas muy grandes (monitores grandes) 
 @media (min-width: 1441px) {
   .calculator {
     max-width: 30%;
-    /* Ajusta otros estilos según sea necesario para pantallas muy grandes */
+    /* Ajusta otros estilos según sea necesario para pantallas muy grandes 
   }
-}
+}**/
